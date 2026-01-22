@@ -1,0 +1,18 @@
+SHADOW DEPLOYMENT REPORT (SAME REVIEW BUDGET)
+------------------------------------------
+review_budget : Top 2%
+flagged_count_A : 4000
+flagged_count_B : 4000
+budget_threshold_A_ref : 0.9629
+budget_threshold_B_ref : 0.9473
+disagreement_rate : 0.61%
+avg_score_A : 0.0875
+avg_score_B : 0.0876
+high_risk_rate_A : 2.81%
+high_risk_rate_B : 2.49%
+cost_A : 140046
+cost_B : 144160
+False Positives_A : 476
+False Negatives_A : 13957
+False Positives_B : 850
+False Negatives_B : 14331
