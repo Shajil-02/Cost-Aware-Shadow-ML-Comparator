@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (large + generated)
+data/raw/
+data/processed/
+
+# Models + outputs (generated)
+models/
+outputs/
+
+# Logs
+*.log
