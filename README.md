@@ -26,6 +26,7 @@ Both models are evaluated under the **same review budget** (Top *K%* flagged), a
 ### 1) Shadow Deployment
 Model B runs in parallel with Model A on the same traffic/data but does not affect decisions. We compare behavior and cost impact before rollout.
 
+
 ### 2) Same Review Budget (Top K% Flagged)
 Most fraud systems have limited investigation/review capacity. This project enforces the same constraint for both models:
 
@@ -33,10 +34,13 @@ Most fraud systems have limited investigation/review capacity. This project enfo
 
 This ensures a fair comparison and avoids misleading threshold-based metrics.
 
+
+
 ### 3) Disagreement Rate (Rollout Risk)
 The system measures how often Model B would behave differently than Model A:
 
 > “In X% of transactions, Model B behaves differently than Model A.”
+
 
 ### 4) Cost-Aware Decision
 We compute business cost using weighted FP/FN:
@@ -69,12 +73,12 @@ note: If your dataset uses a different label name (e.g., Class), update the labe
 
 Install the dependencies
 
-pip install -r requirements.txt
+> pip install -r requirements.txt
 
 
 Run the full pipeline
 
-python main.py
+> python main.py
 
 
 This will:
@@ -89,7 +93,9 @@ This will:
 ### Outputs Generated
 
 After running, the following artifacts are created:
+
 Reports (outputs/reports/)
+
 comparison_table.csv
 - Row-wise table containing:
   proba_A, proba_B
@@ -109,5 +115,6 @@ disagreement_slices.png
 - Top slices with highest disagreement rates.
 
 
-### License 
-MIT
+** Worked by 
+Shajil BP
+**
