@@ -1,4 +1,4 @@
-# Cost-Aware Shadow Comparison of ML Models
+# Cost-Aware Shadow ML Comparator
 
 A minimal, production-inspired **shadow deployment evaluation** system that compares two fraud detection models under a **fixed review budget** and recommends whether to ship the new model based on **business cost (FP/FN)** and **behavior disagreement risk**.
 
@@ -56,6 +56,7 @@ Dataset can be downloaded from
 https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fraud
 
 Place your dataset at:
+
 data/raw/creditcard.csv
 
 This project expects a binary label column:
@@ -67,12 +68,14 @@ note: If your dataset uses a different label name (e.g., Class), update the labe
 ### How to Run
 
 Install the dependencies
-'''bash 
+
 pip install -r requirements.txt
 
+
 Run the full pipeline
-'''bash
+
 python main.py
+
 
 This will:
 - Split raw data into train/val/test (once)
@@ -82,9 +85,6 @@ This will:
 - Compute disagreement rate + FP/FN + cost
 - Save reports and plots
 ---
-
-### Sample Input/Output CLI
-
 
 ### Outputs Generated
 
@@ -107,3 +107,7 @@ score_hist.png
 
 disagreement_slices.png
 - Top slices with highest disagreement rates.
+
+
+### License 
+MIT
